@@ -1,10 +1,8 @@
+---
+one-liner: Seven attempts to serve an HTML file, ignoring multiple all-caps STOPs
+---
+
 # Just Import the File
-
-## What Happened
-
-Claude was asked to serve an HTML file with Bun and spiraled through Vite middleware, manual bundling, URL parsing, and `new Response(Bun.file(resolve(clientDir, "index.html")))` before being told - repeatedly, in all caps - to just import the file.
-
-## The Chat
 
 > **human:** Why are you using Vite instead of just having a Bun route to index.html? Isn't that part of the point of Bun?
 >

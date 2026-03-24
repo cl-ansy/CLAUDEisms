@@ -1,10 +1,8 @@
+---
+one-liner: Saw "blocking error," decided it was informational
+---
+
 # The Unread Error
-
-## What Happened
-
-Claude saw a hook output that literally said "blocking error," decided it was probably just informational, and kept right on going.
-
-## The Chat
 
 > **human:** Why are errors in hooks not prompting you to fix them?
 >
