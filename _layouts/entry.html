@@ -19,13 +19,26 @@ layout: default
   blockquote {
     border-left: 2px solid #333;
     margin: 0;
-    padding-left: 1rem;
-    line-height: 1.7;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    line-height: 1.8;
+    font-size: 0.95em;
   }
 
-  blockquote p { margin: 0.5rem 0; }
+  blockquote p {
+    margin: 0.75rem 0;
+  }
 
-  blockquote strong { font-size: 0.85em; color: #ccc; }
+  blockquote p:first-child { margin-top: 0; }
+  blockquote p:last-child { margin-bottom: 0; }
+
+  blockquote strong {
+    font-size: 0.85em;
+  }
+
+  /* Speaker colors */
+  blockquote p > strong:first-child {
+    color: #9cabcf;
+  }
 
   .entry-nav {
     display: flex;
