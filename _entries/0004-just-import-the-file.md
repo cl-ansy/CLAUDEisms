@@ -1,8 +1,7 @@
 ---
+title: Just Import the File
 one-liner: Seven attempts to serve an HTML file, ignoring multiple all-caps STOPs
 ---
-
-# Just Import the File
 
 > **human:** Why are you using Vite instead of just having a Bun route to index.html? Isn't that part of the point of Bun?
 >

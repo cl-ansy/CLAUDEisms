@@ -1,8 +1,7 @@
 ---
+title: The Unread Error
 one-liner: 'Saw "blocking error," decided it was informational'
 ---
-
-# The Unread Error
 
 > **human:** Why are errors in hooks not prompting you to fix them?
 >

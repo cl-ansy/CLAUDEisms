@@ -1,8 +1,7 @@
 ---
+title: The Fix Is In
 one-liner: Fixed one bugs, introduced two new ones, then promised to think harder next time
 ---
-
-# The Fix Is In
 
 > **human:** Why are there new critical issues on every review?
 >

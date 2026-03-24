@@ -16,10 +16,9 @@ Steps:
 
 ```markdown
 ---
+title: <Title>
 one-liner: <A short, punchy summary of the gaffe for the README table. One sentence fragment, no period. If the value contains quotes or special YAML characters (:, #, etc.), wrap it in single quotes.>
 ---
-
-# <Title>
 
 > **human:** message here
 >
@@ -27,6 +26,8 @@ one-liner: <A short, punchy summary of the gaffe for the README table. One sente
 >
 > **human:** follow-up here
 ```
+
+Do NOT include a `# Title` heading in the content - the layout renders the title from frontmatter.
 
 Format the chat to resemble a real Claude Code terminal session. Use `**human:**` and `**claude:**` as speaker prefixes (lowercase, bold). Each speaker turn is a blockquote line. Separate turns with a blank blockquote line (`>`). Trim to just the funny/relevant part.
 

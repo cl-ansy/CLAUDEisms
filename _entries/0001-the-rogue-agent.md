@@ -1,8 +1,7 @@
 ---
+title: The Rogue Agent
 one-liner: Wrote the rules, then didn't tell its own agents
 ---
-
-# The Rogue Agent
 
 > **human:** I'll do it. Why did the agent commit and push without prompting?
 >
