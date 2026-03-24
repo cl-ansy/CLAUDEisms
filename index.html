@@ -21,7 +21,7 @@ layout: default
   {% for entry in sorted %}
   <li>
     <span class="entry-number">#{{ entry.slug | slice: 0, 4 }}</span>
-    <span><a href="{{ entry.url }}">{{ entry.title }}</a><br><span class="entry-liner">{{ entry.one-liner }}</span></span>
+    <span><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a><br><span class="entry-liner">{{ entry.one-liner }}</span></span>
   </li>
   {% endfor %}
 </ul>
