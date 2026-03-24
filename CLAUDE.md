@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repo
 
-CLAUDEisms is a journal of gaffes, silly decisions, and amusing mistakes made by Claude. It is a documentation/content repo, not a software project - there is no build system, test suite, or application code.
+CLAUDEisms is a journal of gaffes, poor decisions, and amusing mistakes made by Claude. It is a documentation/content repo, not a software project - there is no build system, test suite, or application code.
 
 ## Tone
 
