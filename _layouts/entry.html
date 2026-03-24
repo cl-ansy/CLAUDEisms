@@ -23,6 +23,14 @@ layout: default
   blockquote p { margin: 0.5rem 0; }
 
   blockquote strong { font-size: 0.85em; color: #ccc; }
+
+  .entry-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0;
+    font-size: 0.85em;
+  }
+  .entry-nav .next { margin-left: auto; }
 </style>
 
 <p class="back"><a href="{{ '/' | relative_url }}">&larr; all entries</a></p>
@@ -33,3 +41,12 @@ layout: default
 </div>
 
 {{ content }}
+
+<nav class="entry-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+  {% endif %}
+  {% if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+  {% endif %}
+</nav>
