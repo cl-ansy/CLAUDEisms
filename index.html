@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<style>
+  .entry-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+  .entry-list li {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    margin: 0.75rem 0;
+  }
+  .entry-number { color: #666; }
+  .entry-liner { color: #777; }
+</style>
+
+<h1>CLAUDEisms</h1>
+<p>A journal of gaffes, silly decisions, and amusing mistakes made by Claude.</p>
+
+<ul class="entry-list">
+  {% assign sorted = site.entries | sort: 'slug' | reverse %}
+  {% for entry in sorted %}
+  <li>
+    <span class="entry-number">#{{ entry.slug | slice: 0, 4 }}</span>
+    <span><a href="{{ entry.url }}">{{ entry.title }}</a><br><span class="entry-liner">{{ entry.one-liner }}</span></span>
+  </li>
+  {% endfor %}
+</ul>

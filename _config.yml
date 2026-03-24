@@ -1,0 +1,14 @@
+title: CLAUDEisms
+description: A journal of gaffes, silly decisions, and amusing mistakes made by Claude.
+
+collections:
+  entries:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: entries
+    values:
+      layout: entry

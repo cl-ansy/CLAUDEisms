@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<style>
+  .back { margin: 0 0 1.5rem; }
+
+  .entry-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin: 0 0 1.5rem;
+  }
+  .entry-header h1 { margin: 0; }
+  .entry-header .entry-number { font-size: 0.9rem; color: #666; }
+
+  blockquote {
+    border-left: 2px solid #333;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  blockquote p { margin: 0.5rem 0; }
+
+  blockquote strong { font-size: 0.85em; color: #ccc; }
+</style>
+
+<p class="back"><a href="/">&larr; all entries</a></p>
+
+<div class="entry-header">
+  <h1>{{ page.title }}</h1>
+  <span class="entry-number">#{{ page.slug | slice: 0, 4 }}</span>
+</div>
+
+{{ content }}

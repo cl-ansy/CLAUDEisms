@@ -11,8 +11,8 @@ Steps:
 
 1. Read the chat snippet and identify the gaffe, silly decision, or amusing behavior Claude exhibited.
 2. Pick a short, punchy title that captures the humor (e.g., "The Phantom Import", "Confidently Wrong About Its Own Name").
-3. Check the `entries/` directory for existing files to determine the next entry number and confirm the naming convention.
-4. Create a new markdown file at `entries/NNNN-kebab-case-title.md` using this format:
+3. Check the `_entries/` directory for existing files to determine the next entry number and confirm the naming convention.
+4. Create a new markdown file at `_entries/NNNN-kebab-case-title.md` using this format:
 
 ```markdown
 ---
