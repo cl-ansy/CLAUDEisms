@@ -1,5 +1,6 @@
 title: CLAUDEisms
 description: A journal of gaffes, silly decisions, and amusing mistakes made by Claude.
+baseurl: /CLAUDEisms
 
 collections:
   entries:
