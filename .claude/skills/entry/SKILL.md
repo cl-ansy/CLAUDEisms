@@ -16,7 +16,7 @@ Steps:
 
 ```markdown
 ---
-one-liner: <A short, punchy summary of the gaffe for the README table. One sentence fragment, no period.>
+one-liner: <A short, punchy summary of the gaffe for the README table. One sentence fragment, no period. If the value contains quotes or special YAML characters (:, #, etc.), wrap it in single quotes.>
 ---
 
 # <Title>

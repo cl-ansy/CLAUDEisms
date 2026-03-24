@@ -1,5 +1,5 @@
 ---
-one-liner: "Did you do the thing?" "No, I forgot."
+one-liner: '"Did you do the thing?" "No, I forgot."'
 ---
 
 # Honest to a Fault

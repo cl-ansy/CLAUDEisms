@@ -1,5 +1,5 @@
 ---
-one-liner: Saw "blocking error," decided it was informational
+one-liner: 'Saw "blocking error," decided it was informational'
 ---
 
 # The Unread Error
