@@ -33,5 +33,4 @@ Format the chat to resemble a real Claude Code terminal session. Use `**human:**
 
 5. Redact any user-specific or project-specific information from the chat before writing. Replace real project names, file paths, variable names, team names, or other identifying details with generic placeholders (e.g., "the project", "the service", "TICKET-123") while preserving the chat structure, intent, and humor. The entry should be funny to anyone without revealing what the user was working on.
 6. Keep the tone lighthearted and fun per the repo's guidelines.
-7. Update the entries table in `README.md` - add a new row at the top of the table (reverse chronological order). Use the one-liner from the frontmatter.
-8. Show the user the created file path and a one-line summary of the entry.
+7. Show the user the created file path and a one-line summary of the entry.
