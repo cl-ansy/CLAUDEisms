@@ -31,6 +31,6 @@ Do NOT include a `# Title` heading in the content - the layout renders the title
 
 Format the chat to resemble a real Claude Code terminal session. Use `**human:**` and `**claude:**` as speaker prefixes (lowercase, bold). Each speaker turn is a blockquote line. Separate turns with a blank blockquote line (`>`). Trim to just the funny/relevant part.
 
-5. Redact any user-specific or project-specific information from the chat before writing. Replace real project names, file paths, variable names, team names, or other identifying details with generic placeholders (e.g., "the project", "the service", "TICKET-123") while preserving the chat structure, intent, and humor. The entry should be funny to anyone without revealing what the user was working on.
+5. Redact any user-specific or project-specific information from the chat before writing. Replace real project names, file paths, variable names, team names, or other identifying details with generic placeholders (e.g., "the project", "the service", "TICKET-123") while preserving the chat structure, intent, and humor. The entry should be funny to anyone without revealing what the user was working on. However, keep technology names (libraries, frameworks, databases, languages, tools, etc.) as-is - they provide essential context and are not identifying information.
 6. Keep the tone lighthearted and fun per the repo's guidelines.
 7. Show the user the created file path and a one-line summary of the entry.
