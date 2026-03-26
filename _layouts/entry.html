@@ -3,18 +3,27 @@ layout: default
 ---
 
 <style>
-  .back { margin: 0 0 1.5rem; }
-  .back a, .entry-nav a { color: #666; }
-  .back a:hover, .entry-nav a:hover { color: #999; }
-
-  .entry-header {
+  .entry-topbar {
     display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 0 1.5rem;
   }
-  .entry-header h1 { margin: 0; }
-  .entry-header .entry-number { font-size: 0.8rem; color: #555; }
+  .back a { color: #555; font-size: 0.85em; transition: none; }
+  .back a:hover { color: #999; text-decoration: none; }
+  .entry-number { color: #555; font-size: 0.8rem; }
+
+  .entry-header {
+    margin: 0 0 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+  }
+  .entry-header h1 { margin: 0 0 0.25rem; }
+  .entry-liner {
+    color: #666;
+    font-size: 0.85em;
+    margin: 0;
+  }
 
   blockquote {
     border-left: 2px solid #333;
@@ -35,34 +44,68 @@ layout: default
     font-size: 0.85em;
   }
 
-  /* Speaker colors */
+  /* Speaker labels */
   blockquote p > strong:first-child {
     color: #9cabcf;
   }
 
   .entry-nav {
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 0 0;
-    font-size: 0.85em;
+    gap: 0.75rem;
+    margin: 2.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
   }
-  .entry-nav .next { margin-left: auto; }
+  .entry-nav a {
+    flex: 1;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: #888;
+    font-size: 0.8em;
+    line-height: 1.4;
+    transition: none;
+  }
+  .entry-nav a:hover {
+    background: #2a2a2a;
+    color: #ccc;
+    text-decoration: none;
+  }
+  .entry-nav .next { text-align: right; }
+  .entry-nav .dir {
+    display: block;
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 0.15rem;
+  }
+  .entry-nav .nav-title { color: inherit; }
 </style>
 
-<p class="back"><a href="{{ '/' | relative_url }}">&larr; all entries</a></p>
+<div class="entry-topbar">
+  <span class="back"><a href="{{ '/' | relative_url }}">&larr; all entries</a></span>
+  <span class="entry-number">#{{ page.slug | slice: 0, 4 }}</span>
+</div>
 
 <div class="entry-header">
   <h1>{{ page.title }}</h1>
-  <span class="entry-number">#{{ page.slug | slice: 0, 4 }}</span>
+  {% if page.one-liner %}
+    <p class="entry-liner">{{ page.one-liner }}</p>
+  {% endif %}
 </div>
 
 {{ content }}
 
 <nav class="entry-nav">
   {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+    <a href="{{ page.previous.url | relative_url }}">
+      <span class="dir">&larr; prev</span>
+      <span class="nav-title">{{ page.previous.title }}</span>
+    </a>
   {% endif %}
   {% if page.next %}
-    <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+    <a class="next" href="{{ page.next.url | relative_url }}">
+      <span class="dir">next &rarr;</span>
+      <span class="nav-title">{{ page.next.title }}</span>
+    </a>
   {% endif %}
 </nav>
